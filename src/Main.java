@@ -30,7 +30,7 @@ public class Main {
         else {
             System.out.println("Gracz 1 wpisuje swoje hasło");
             word = keyboard.nextLine();
-            System.out.println("\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n");
+
             System.out.println("Gracz 2 odgaduje hasło. Powodzenia!");
         }
 
@@ -44,7 +44,7 @@ public class Main {
             printHangedMan(wrongCount);
 
             if (wrongCount >= 6) {
-                System.out.println("Przegrywasz");
+                System.out.println("Przegrywasz!");
                 System.out.println("Twoje hasło brzmiało: " + word);
                 break;
             }
@@ -90,6 +90,7 @@ public class Main {
 
         if (wrongCount >= 4) {
             System.out.println(" |");
+
         }
 
         if (wrongCount >= 5) {
@@ -99,6 +100,7 @@ public class Main {
             }
             else {
                 System.out.println("");
+
             }
         }
         System.out.println("");
